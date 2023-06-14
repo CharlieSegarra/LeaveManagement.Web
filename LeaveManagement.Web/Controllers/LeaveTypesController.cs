@@ -17,7 +17,7 @@ namespace LeaveManagement.Web.Controllers
         private readonly IMapper mapper;
 
         //constructor
-        public LeaveTypesController(ApplicationDbContext context, IMapper mapper)
+        public LeaveTypesController(ApplicationDbContext context, IMapper mapper) //conversion of what goes in to db and what the user is allowed to see
         {
             _context = context;
             this.mapper = mapper;
